@@ -1,6 +1,7 @@
 .button {
     color: darksalmon;
     padding: 4px;
+    margin-top: 10px;
     background-color: cornflowerblue;
     border-radius: 10%;
     border-color: hsl(54, 88%, 54%);
