@@ -1,0 +1,10 @@
+.button {
+    color: darksalmon;
+    padding: 4px;
+    background-color: cornflowerblue;
+    border-radius: 10%;
+    border-color: hsl(54, 88%, 54%);
+    border-style: solid;
+    /* margin-left: 3vh; */
+    transition: all 150ms ease-in-out;
+}
