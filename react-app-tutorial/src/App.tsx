@@ -11,16 +11,16 @@ const categories = ['Entertainment', 'Utilities', 'Groceries'];
 
 function App() {
 
-  const expenses = [
+  const [expenses, setExpenses] = useState([
     {id: 1, description: 'Product1', amount: 1, category: 'Groceries'},
     {id: 2, description: 'Product2', amount: 1, category: 'Groceries'},
     {id: 3, description: 'Product3', amount: 1, category: 'Groceries'},
     {id: 4, description: 'Product4', amount: 1, category: 'Groceries'}
-  ];
+  ]);
   
 
   return(
-    <ExpenseList expenses={expenses} onDelete={() => console.log('Deleted')}></ExpenseList>
+    <ExpenseList expenses={expenses} onDelete={(id) => setExpenses(expenses.filter(e => e.id !== id))}></ExpenseList>
     // <ExpenseInput types={categories}></ExpenseInput>
   )
 
