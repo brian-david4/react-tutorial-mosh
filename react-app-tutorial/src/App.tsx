@@ -8,7 +8,7 @@ import ExpenseInput from "./expense-tracker/components/ExpenseInput/ExpenseInput
 import ExpenseList from "./expense-tracker/components/ExpenseList";
 import ExpenseFilter from "./expense-tracker/components/ExpenseFilter/ExpenseFilter";
 
-const categories = ["Entertainment", "Utilities", "Groceries"];
+export const categories = ["Entertainment", "Utilities", "Groceries"]; categories;
 
 
 
@@ -27,7 +27,7 @@ function App() {
 
   return (
   <>
-    <ExpenseInput categories={categories}></ExpenseInput>
+    <ExpenseInput></ExpenseInput>
   <div>
     <div className="mb-3">
       <ExpenseFilter

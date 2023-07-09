@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "./ExpenseInput.module.css";
 import { useState } from "react";
+import { categories } from "../../../App";
 
-interface InputProps {
-  categories: string[];
-}
+// interface InputProps {
+//   categories: string[];
+// }
 
-const ExpenseInput = ({ categories }: InputProps) => {
+const ExpenseInput = () => {
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -25,7 +26,7 @@ const ExpenseInput = ({ categories }: InputProps) => {
       </div>
       <div className="mb-3">
         <label htmlFor="categories" className="form-label">Categories</label>
-        <select name="" id="categories" className="form-select">
+        <select id="categories" className="form-select">
           <option value=""> Select Category</option>
           {categories.map((category, idx) => (
             <option key={idx} value={category}>{category}</option>
