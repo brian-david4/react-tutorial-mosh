@@ -4,7 +4,7 @@ import Button from "./components/Button/Button";
 import ListGroup from "./components/ListGroup";
 import ExpandableText from "./components/ExpandableText";
 import Form from "./components/Form";
-import ExpenseInput from "./expense-tracker/ExpenseList/ExpenseInput/ExpenseInput";
+import ExpenseInput from "./expense-tracker/components/ExpenseInput/ExpenseInput";
 import ExpenseList from "./expense-tracker/components/ExpenseList";
 
 const categories = ['Entertainment', 'Utilities', 'Groceries'];
