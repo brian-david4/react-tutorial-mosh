@@ -8,7 +8,7 @@ import ExpenseInput from "./expense-tracker/components/ExpenseInput/ExpenseInput
 import ExpenseList from "./expense-tracker/components/ExpenseList";
 import ExpenseFilter from "./expense-tracker/components/ExpenseFilter/ExpenseFilter";
 
-// const categories = ["Entertainment", "Utilities", "Groceries"];
+const categories = ["Entertainment", "Utilities", "Groceries"];
 
 
 
@@ -27,6 +27,7 @@ function App() {
 
   return (
   <>
+    <ExpenseInput categories={categories}></ExpenseInput>
   <div>
     <div className="mb-3">
       <ExpenseFilter
@@ -38,7 +39,6 @@ function App() {
       onDelete={(id) => setExpenses(expenses.filter((e) => e.id !== id))}
     ></ExpenseList>
     </div>
-    {/* <ExpenseInput types={categories}></ExpenseInput> */}
 </>
   );
 }

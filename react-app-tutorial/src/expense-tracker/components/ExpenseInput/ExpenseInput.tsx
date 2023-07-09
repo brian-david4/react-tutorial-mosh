@@ -3,10 +3,10 @@ import styles from "./ExpenseInput.module.css";
 import { useState } from "react";
 
 interface InputProps {
-  types: string[];
+  categories: string[];
 }
 
-const ExpenseInput = ({ types }: InputProps) => {
+const ExpenseInput = ({ categories }: InputProps) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -22,6 +22,15 @@ const ExpenseInput = ({ types }: InputProps) => {
           Amount
         </label>
         <input id="Amount" type="text" className="form-control" />
+      </div>
+      <div className="mb-3">
+        <label htmlFor="categories" className="form-label">Categories</label>
+        <select name="" id="categories" className="form-select">
+          <option value=""> Select Category</option>
+          {categories.map((category, idx) => (
+            <option key={idx} value={category}>{category}</option>
+          ))};
+        </select>
       </div>
       <button className={styles.button}>Submit</button>
     </form>
