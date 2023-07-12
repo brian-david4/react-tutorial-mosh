@@ -11,7 +11,7 @@ function App() {
                "aside main"`,
         }}
       >
-        <GridItem area="nav" bg="coral">
+        <GridItem area="nav">
           Nav
         </GridItem>
         <Show above="lg">
